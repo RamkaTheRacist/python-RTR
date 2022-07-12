@@ -3,7 +3,7 @@ import random
 
 def fillArrayRandom(size: int, startNumber: int, endNumber: int):
     array = []
-    for i in range(size + 1):
+    for i in range(size):
         array.append(random. randrange(startNumber, endNumber))
     return array
 
