@@ -3,9 +3,11 @@
 # Пример:
 # - Для n = 6: {1: 4, 2: 7, 3: 10, 4: 13, 5: 16, 6: 19}
 number = int(input("Which number? "))
-array = []
-tmp = 1
-for i in range(1, (number + 1)):
-    tmp = (1 + 1/i) ** i
-    array.append(tmp)
-print(array) 
+def func(number: int):
+    array = []
+    tmp = 1
+    for i in range(1, (number + 1)):
+        tmp = (1 + 1/i) ** i
+        array.append(tmp)
+    return array
+print(func(number)) 
