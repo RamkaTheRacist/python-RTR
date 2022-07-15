@@ -82,3 +82,6 @@
 # print(func(createArray(int(input("Which number? "))), positions(input("Positions? "))))
 
 
+a = {1,2,3,5,8}
+b = {2,5,8,13,21}
+print(b.intersection(a))
