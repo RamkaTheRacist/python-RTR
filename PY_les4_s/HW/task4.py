@@ -4,15 +4,32 @@
 import random
 from pathlib import Path
 path = Path(r'Task4File.txt')
-a =  f'{random. randrange(0, 101)} * x ** 2 + '
-b =  f'{random. randrange(0, 101)} * x + '
-c =  f'{random. randrange(0, 101)}'
-if(int(a[:2]) == 0):
-    a = ''
-if(int(b[:2]) == 0):
-    b = ''
-if(len(a) + len(b) + len(c) == 0):
-    c = '0' 
+def fillArrayRandom(size: int) -> list:
+    array = []
+    for i in range(size):
+        array.append(random. randrange(0, 101))
+    return array
+
+def writtingString(array: list) -> str:
+    stringForResult = ''
+    for i in range(len(array)):
+        if(i != len(array) - 1):
+            if(array[i] != 0):
+                stringForResult = stringForResult + f'{array[i]}*x**{len(array) - i} + '
+        else:
+            if(array[i] != 0):
+                stringForResult = stringForResult + f'{array[i]}*x + '
+    return stringForResult
+
+
+k = int(input("Which k? "))
+array = fillArrayRandom(k)
+result = writtingString(array)
+lastNumber = random. randrange(0, 101)
+if(lastNumber != 0):
+    result = result + f'{lastNumber} = 0'
+else:
+    result = result[0:-2] + '= 0'
 
 with open (path, 'a') as data:
-    data.write(f'{a}{b}{c} = 0\n')
+    data.write(f'{result}\n')
