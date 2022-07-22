@@ -82,6 +82,41 @@
 # print(func(createArray(int(input("Which number? "))), positions(input("Positions? "))))
 
 
-a = {1,2,3,5,8}
-b = {2,5,8,13,21}
-print(b.intersection(a))
+# a = {1,2,3,5,8}
+# b = {2,5,8,13,21}
+# print(b.intersection(a))
+
+# def removeRepetiton(array:list, array2:list) -> list:
+#     for i in range(len(array2)):
+#         del array[array2[len(array2) - 1 - i]]
+#     return array
+
+
+# def positionOfRepetition(array: list) -> list:
+#     posArray = []   
+#     for i in range(len(array)):
+#         for k in range(i + 1, len(array)):
+#             if(array[k] == array[i]):
+#                 posArray.append(k)
+#                 break    
+#     return posArray
+
+
+# def sortOfArray(array: list) -> list:
+#     index = 0
+#     while(index < len(array)):
+#         max = -1
+#         tmpPos = len(array) - 1 - index
+#         for i in range(len(array) - index):
+#             if(max < array[i]):
+#                 max = array[i]
+#                 tmpPos = i
+#         if(tmpPos != len(array) - index):
+#             tmp = array[len(array) - 1 - index]
+#             array[len(array) - 1 - index] = array[tmpPos]
+#             array[tmpPos] = tmp
+#         index += 1
+#     return array
+
+
+
