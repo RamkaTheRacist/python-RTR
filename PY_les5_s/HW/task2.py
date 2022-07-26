@@ -40,7 +40,7 @@ def takeCandy() -> int:
 def gamePVP(number:int):
     choose = number
     history = ''
-    size = 20
+    size = 2021
     count = 0
     minus = 0
     while(size > 1):
@@ -90,7 +90,7 @@ def gamePVP(number:int):
 def gamePVE(number:int, botIQ: int):
     choose = number
     history = ''
-    size = 20
+    size = 2021
     count = 0
     minus = 0
     while(size > 1):
@@ -211,5 +211,5 @@ def botIAEnable(number: int) -> int:
         count = number
     return count
 
-    
+
 typeOfGame(modeChoose())
