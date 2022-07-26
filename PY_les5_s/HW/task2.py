@@ -141,11 +141,11 @@ def win(number: int) -> str:
     if(number == 0):
         clearConsole()
         print("Second player took last candies")
-        print("Second player wins")
+        print("Second player is boss of this gym")
     else:
         clearConsole()
         print("First player took last candies")
-        print("First player wins")
+        print("First player is boss of this gym")
 
 
 
@@ -176,7 +176,7 @@ def typeOfGame(number: int):
         print("PVE Easymode")
         input("Press any key")
         gamePVE(choose(), number)
-    else:
+    elif(number == 3):
         print("PVE Hardmode")
         input("Press any key")
         gamePVE(choose(), number)
