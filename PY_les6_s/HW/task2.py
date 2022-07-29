@@ -35,6 +35,4 @@ else:
     newArray2 = [array[-i] for i in range(1, len(array)// 2 + 2)]
 result = list(map((lambda x, y: x * y), newArray1, newArray2))
 print(array)
-print(newArray1)
-print(newArray2)
-print(result)
+print(f'Result is: {result}')
